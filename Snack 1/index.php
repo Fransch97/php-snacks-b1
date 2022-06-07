@@ -33,6 +33,7 @@ $partite = [
     ]
 ];
 
+
 ?>
 
 
@@ -57,5 +58,19 @@ $partite = [
         <?php endfor;?>
 
 
+    <!-- oppure -->
+    <?php for($i = 0; $i< count($partite); $i++): ?>
+        <p> <?php echo $partite[$i]["casa"] ;?> - <?php echo $partite[$i]["ospite"]; ?> |  <?php echo $partite[$i]["ospitePoints"] ; ?> - <?php echo $partite[$i]["casaPoints"]; ?> </p>
+    <?php endfor;?>
+
+    <!-- oppure -->
+    <?php for($i = 0; $i< count($partite); $i++): ?>
+        <p> <?php echo implode(" - ",$partite[$i],) ?> </p>
+    <?php endfor;?>
+
+<!-- oppure -->
+    <?php for($i = 0; $i< count($partite); $i++): ?>
+            <p> <?php echo $partite[$i]["casa"] . " - " . $partite[$i]["ospite"] . " | " . $partite[$i]["ospitePoints"] . " - " . $partite[$i]["casaPoints"]; ?> </p>
+    <?php endfor;?>
 </body>
 </html>

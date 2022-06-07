@@ -64,7 +64,7 @@ $alunni =[
     <?php for($i = 0; $i < count($alunni); $i++) : ?>
         <ul>
             <li>Nome: <?php echo $alunni[$i]["nome"] ?></li>
-            <li>Cognome: <?php echo $alunni[$i]["nome"] ?></li>
+            <li>Cognome: <?php echo $alunni[$i]["cognome"] ?></li>
             <li>Voti: <?php echo implode(" , ",$alunni[$i]["voti"]) ?> </li>
         </ul>
     <?php endfor;?>

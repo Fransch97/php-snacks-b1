@@ -65,16 +65,14 @@ $alunni =[
         <ul>
             <li>Nome: <?php echo $alunni[$i]["nome"] ?></li>
             <li>Cognome: <?php echo $alunni[$i]["cognome"] ?></li>
-            <li>Voti: <?php echo implode(" , ",$alunni[$i]["voti"]) ?> </li>
+            <ul>
+                <?php for($x = 0; $x < count($alunni[$i]["voti"]); $x++  ) {?>
+                    <li><?php echo $alunni[$i]["voti"][$x] ?></li>
+                <?php  }?>
+            </ul>
         </ul>
     <?php endfor;?>
 
 
 </body>
 </html>
-
-                <!-- <ul>
-                    #<?php #for($ii; $ii < count($alunni[$i]["voti"]); $ii++  ) :?>
-                    #<li><?php #echo $alunni[$i]["voti"][$ii] ?></li>
-                    #<?php # endfor; ?>
-                </ul> -->

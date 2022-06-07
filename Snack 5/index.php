@@ -1,7 +1,5 @@
 <?php
 
-
-
 $test = "ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.ciao come ti chiami? io francesco.";
 
 $test_arr = explode(".",$test);
@@ -19,7 +17,7 @@ $test_arr = explode(".",$test);
 <body style="text-align: center;">
 
     <?php for($i = 0; $i < count($test_arr); $i++) :?>
-        <p><?php echo $test_arr[$i]?></p>
+        <p><?php echo $test_arr[$i]."."?></p>
     <?php endfor; ?>
 
 </body>

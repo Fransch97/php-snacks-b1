@@ -66,9 +66,24 @@ $alunni =[
             <li>Nome: <?php echo $alunni[$i]["nome"] ?></li>
             <li>Cognome: <?php echo $alunni[$i]["cognome"] ?></li>
             <ul>
-                <?php for($x = 0; $x < count($alunni[$i]["voti"]); $x++  ) {?>
+                <?php
+                 for($x = 0; $x < count($alunni[$i]["voti"]); $x++  ) {
+                     $votiTotal += $alunni[$i]["voti"][$x];
+                     ?>
                     <li><?php echo $alunni[$i]["voti"][$x] ?></li>
+
+                    <?php if($x + 1 === count($alunni[$i]["voti"])) :
+                        $media =     $votiTotal / count($alunni[$i]["voti"])
+                    ?>
+
+                    <li>La media dei voti è: <?php echo $media  ?></li>
+                       <?php 
+                       $votiTotal = 0;
+                       $media = 0;
+                       ?>
+                    <?php endif;?>
                 <?php  }?>
+                
             </ul>
         </ul>
     <?php endfor;?>

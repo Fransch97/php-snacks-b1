@@ -76,7 +76,7 @@ $alunni =[
                         $media =     $votiTotal / count($alunni[$i]["voti"])
                     ?>
 
-                    <li>La media dei voti è: <?php echo $media  ?></li>
+                    <li>La media dei voti è: <?php echo round($media)  ?></li>
                        <?php 
                        $votiTotal = 0;
                        $media = 0;
